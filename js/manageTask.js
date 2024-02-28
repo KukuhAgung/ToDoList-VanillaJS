@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const userFriendlyDate = formatDate(task.createdAt);
         const itemTask = document.createElement("div");
         itemTask.className =
-          "flex justify-between bg-second rounded-lg p-[1rem] w-full rounded-3xl";
+          "flex justify-between bg-second p-[1rem] w-full rounded-3xl";
         itemTask.innerHTML = `
           <div class="task-card flex flex-col gap-5">
             <div class="flex gap-3 items-center">
