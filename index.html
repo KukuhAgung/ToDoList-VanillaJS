@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css" />
+</head>
+
+<body class="bg-third">
+  <div class="container w-full min-h-screen flex justify-center items-center">
+    <div class="login flex flex-col gap-[1rem] p-[2rem] w-[490px] justify-center bg-primary rounded-lg">
+      <div class="logo flex items-center mx-auto">
+        <img src="img/logo.svg" alt="" />
+      </div>
+      <div class="flex flex-col gap-5">
+        <div>
+          <h1 class="text-header font-bold text-[22px] leading-[33px] mb-[3px]">
+            Sign In
+          </h1>
+          <p class="text-paragrap text-sm leading-[21px]">
+            Manage daily task easily
+          </p>
+        </div>
+        <hr class="text-paragrap" />
+        <form class="flex flex-col gap-[30px]" id="userForm">
+          <div>
+            <label for="username" class="font-semibold text-header">Username</label>
+            <div
+              class="flex items-center py-[12px] px-[16px] rounded-full border border-paragrap mt-[1rem] focus-within:ring-2 focus-within:ring-active">
+              <div class="mr-[10px] w-6 h-6 flex items-center justify-center">
+                <img src="img/icons/profile-circle.svg" alt="icon" />
+              </div>
+              <input type="text"
+                class="font-semibold bg-primary placeholder:text-paragrap text-paragrap placeholder:font-normal focus:outline-none w-full focus:bg-none active:bg-none"
+                placeholder="Type your username" id="username" name="username" required />
+            </div>
+          </div>
+          <label for="remember" class="flex flex-row gap-[0.5rem] items-center w-fit">
+            <input type="checkbox" name="remember" id="remember"
+              class="flex shrink-0 w-[22px] h-[22px] appearance-none checked:border-2 checked:border-solid checked:border-logo rounded-full checked:bg-primary ring-1 ring-logo" />
+            <label for="remember" class="text-paragrap text-sm">Remember me</label>
+          </label>
+          <button type="submit"
+            class="flex gap-[10px] justify-center items-center text-white p-[12px_16px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full">
+            Sign In
+          </button>
+          <hr class="text-paragrap" />
+          <a href="./pages/register.html"
+            class="flex gap-[10px] justify-center items-center text-header p-[12px_16px] h-12 font-semibold rounded-full w-full border border-taskia-background-grey hover:text-active transition-all ease-in-out duration-300">Create
+            New Account</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/signin.js"></script>
+  <script src="./js/user.js"></script>
+</body>
+
+</html>
